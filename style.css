@@ -1,0 +1,90 @@
+.yellow-background {
+    background-color: yellow;
+}
+
+hr.myhrline{
+    border: 100px #707070;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green;*/
+    padding: 10px;
+}
+
+.white-background {
+    background-color: white;
+    margin: auto;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.card {
+    margin: 18px;
+    width: 400px;
+    height: 200px;
+    /* border: 100px rgba(255, 0, 0, 1.0);; */
+    /*border-radius: 40px;*/
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25), -5px -5px 10px 5px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    /*border-radius: 40px;*/
+}
+  
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    /*border-radius: 40px;*/
+    object-fit: cover;
+}
+  
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+}
+  
+.card:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+  
+.title-white {
+    color: white;
+}
+  
+.title-black {
+    color: black;
+}
+  
+@media all and (max-width: 420px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .card {
+        width: 350px;
+        margin: 6px;
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25), 
+            0px 0px 10px 0px rgba(0,0,0,0.22);
+    }
+}
