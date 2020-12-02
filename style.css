@@ -32,6 +32,7 @@ hr.myhrline{
     margin: 18px;
     width: 400px;
     height: 200px;
+    position: relative;
     /* border: 100px rgba(255, 0, 0, 1.0);; */
     /*border-radius: 40px;*/
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25), -5px -5px 10px 5px rgba(0,0,0,0.22);
@@ -52,15 +53,41 @@ hr.myhrline{
     object-fit: cover;
 }
   
-.card .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
+.card .card_authour {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    /* text-align: center; */
+    /* border-radius: 0px 0px 40px 40px; */
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
-    margin-top: -80px;
-    height: 40px;
+    /* margin-bottom: -80px; */
+    /* height: 40px; */
 }
+
+.card .card_quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    /* text-align: center; */
+    /* border-radius: 0px 0px 40px 40px; */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    /* margin-top: -20px; */
+    /* height: 0px; */
+}
+
+/* .card .card_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
   
 .card:hover {
     transform: scale(1.05, 1.05);
