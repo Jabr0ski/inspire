@@ -18,69 +18,32 @@
             <div class="card-inner">
                 <div class="card-front">
                     <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                    <div class="card_quote title-white">
-                        Quote
+                    <div class="card_quote_front title-black" id="fq">
+                        Hello! Click this card to generate a quote.
                     </div>
-                    <div class="card_authour title-white">
-                        Name
+                    <div class="card_authour title-white" id="fa">
+                        blah
                     </div>
                 </div>
                 <div class="card-back">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
+                    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+                    <div class="card_quote_back title-black" id="bq">
+                        Quote
+                    </div>
+                    <div class="card_authour title-white" id="ba">
+                        Name
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="card 2">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                <div class="card_quote title-white">
-                    Quote
-                </div>
-                <div class="card_authour title-white">
-                    Name
-                </div>
-        </div>
-
-        <div class="card 3">
-            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-                <div class="card_quote title-white">
-                    Quote
-                </div>
-                <div class="card_authour title-white">
-                    Name
-                </div>
-        </div> -->
-
-        <!--<div class="card 2">
-            <div class="card_image">
-                <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
-            </div>
-            <div class="card_title title-white">
-                <p>Card Title</p>
-            </div>
-        </div>
-
-        <div class="card 3">
-            <div class="card_image">
-                <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
-            </div>
-            <div class="card_title">
-                <p>Card Title</p>
-            </div>
-        </div>
-
-        <div class="card 4">
-            <div class="card_image">
-                <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
-            </div>
-            <div class="card_title title-black">
-                <p>Card Title</p>
-            </div>
-        </div>-->
     </div>
     <script src='myscript.js'></script>
+    <script>
+        document.addEventListener("load", loadCards());
+        changeText(frontOfCard);
+        // let frontQuote = selectCard();
+        // document.getElementById("fq").innerHTML = frontQuote.quote;
+    </script>
 </body>
 
 </html>

@@ -30,8 +30,8 @@ hr.myhrline{
   
 .card {
     margin: 18px;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 250px;
     position: relative;
     /* border: 100px rgba(255, 0, 0, 1.0);; */
     /*border-radius: 40px;*/
@@ -104,12 +104,13 @@ hr.myhrline{
     /* height: 40px; */
 }
 
-.card .card_quote {
+.card .card_quote_front, .card .card_quote_back {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     color: black;
+    width: 90%;
     /* text-align: center; */
     /* border-radius: 0px 0px 40px 40px; */
     font-family: sans-serif;
