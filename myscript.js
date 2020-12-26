@@ -16,12 +16,12 @@ let faceCard = new qCard;
 
 //flips the card and tracks which face is displaying
 function flipCard() {
-  
   if(frontOfCard){
     frontOfCard = false;
   } else {
     frontOfCard = true;
   }
+  
   changeText();
   cardInner.classList.toggle('is-flipped');
 }
