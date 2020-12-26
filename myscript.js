@@ -30,12 +30,12 @@ function changeText() {
   console.log(frontOfCard)
   if(frontOfCard){
     currCard = selectCard();
-    document.getElementById("bq").innerHTML = currCard.quote;
-    document.getElementById("ba").innerHTML = currCard.authour;
-  } else {
-    currCard = selectCard();
     document.getElementById("fq").innerHTML = currCard.quote;
     document.getElementById("fa").innerHTML = currCard.authour;
+  } else {
+    currCard = selectCard();
+    document.getElementById("bq").innerHTML = currCard.quote;
+    document.getElementById("ba").innerHTML = currCard.authour;
   }
 }
 
@@ -56,7 +56,11 @@ function loadCards() {
   important than what you want.", "Ging Freecss", "Hunter X Hunter",
   "https://i.redd.it/b3esnz5ra34y.jpg");
 
-  qCards = [q1, q2, q3];
+  let q4 = new qCard("Hate is a place where a man who can't \
+  stand sadness goes.", "Godo", "Berserk", 
+  "https://i.redd.it/b3esnz5ra34y.jpg" )
+
+  qCards = [q1, q2, q3, q4];
 }
 
 //selects a random quote card from qCards
