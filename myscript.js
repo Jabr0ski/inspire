@@ -6,7 +6,7 @@ class qCard {
     this.quote = quote;
     this.authour = authour;
     this.extra = extra;
-    this.extra = background;
+    this.background = background;
   }
 }
 
@@ -21,7 +21,7 @@ function flipCard() {
   } else {
     frontOfCard = true;
   }
-  
+
   changeText();
   cardInner.classList.toggle('is-flipped');
 }
@@ -32,10 +32,12 @@ function changeText() {
     currCard = selectCard();
     document.getElementById("fq").innerHTML = currCard.quote;
     document.getElementById("fa").innerHTML = currCard.authour;
+    document.getElementById("fi").src = currCard.background;
   } else {
     currCard = selectCard();
     document.getElementById("bq").innerHTML = currCard.quote;
     document.getElementById("ba").innerHTML = currCard.authour;
+    document.getElementById("bi").src = currCard.background;
   }
 }
 
@@ -44,12 +46,12 @@ function loadCards() {
   let q1 = new qCard("It is important to draw wisdom from \
   different places. If you take it from only one place, it \
   becomes rigid and stale.", "Uncle Iroh", "Avatar: The Last \
-  Airbender", "https://i.redd.it/b3esnz5ra34y.jpg");
+  Airbender", "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b3bf719-8603-4211-a054-1e161ce09a89/dbi1458-63dec81f-fd88-491a-a108-08642109c6f6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMWIzYmY3MTktODYwMy00MjExLWEwNTQtMWUxNjFjZTA5YTg5XC9kYmkxNDU4LTYzZGVjODFmLWZkODgtNDkxYS1hMTA4LTA4NjQyMTA5YzZmNi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.pANG4Qmw8NyMRpOVJomIkSOsvSEpfSD4jXsGpb6Jms4");
   
   let q2 = new qCard("I see now that the circumstances of one's \
   birth are irrelevant. It is what you do with the gift of life \
   that determines who you are.", "Mewtwo", "Pokemon: The First Movie",
-  "https://i.redd.it/b3esnz5ra34y.jpg");
+  "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4220d224-afd0-40fb-bbf8-7fbb07bbbe18/dclmad6-a3273c41-6f48-48ca-9d45-621a942d173b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNDIyMGQyMjQtYWZkMC00MGZiLWJiZjgtN2ZiYjA3YmJiZTE4XC9kY2xtYWQ2LWEzMjczYzQxLTZmNDgtNDhjYS05ZDQ1LTYyMWE5NDJkMTczYi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.p8rH9iXhu306YTS8HpZNEWfydNn3ueVCoew5GeSp_T8");
 
   let q3 = new qCard("You should enjoy the little detours to the \
   fullest, because that's where you will find things more \
