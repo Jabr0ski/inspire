@@ -74,12 +74,12 @@ function loadCards() {
     "A Testament of Hope", "images/purple_mountain.jpg")
 
   let q7 = new qCard("Be yourself; everyone else is already taken.",
-    "Oscar Wilde", "", "images/pink_valley.jpg")
+    "Oscar Wilde", "Unknown Origin", "images/pink_valley.jpg")
 
   let q8 = new qCard("Don’t walk in front of me… I may not \
   follow. Don’t walk behind me… I may not lead. \
   Walk beside me… just be my friend.", "Albert Camus",
-    "", "images/green_forest.jpg")
+    "Unknown Origin", "images/green_forest.jpg")
 
   let q9 = new qCard("No one can make you feel inferior \
   without your consent.", "Eleanor Roosevelt", "This is My Story",
@@ -87,7 +87,7 @@ function loadCards() {
 
   let q10 = new qCard("I've learned that people will forget what \
   you said, people will forget what you did, but people will \
-  never forget how you made them feel.", "Maya Angelou", "",
+  never forget how you made them feel.", "Maya Angelou", "Unknown Origin",
     "images/purple_mountain.jpg")
 
   qCards = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
