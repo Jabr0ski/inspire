@@ -7,7 +7,7 @@
     height: 100vh;
 }
 
-hr.myhrline{
+hr.myhrline {
     border: 100px #707070;
     border-radius: 50px;
     margin: 30px;
@@ -25,6 +25,7 @@ hr.myhrline{
 }
 
 /* contains list of cards */
+
 .cards-list {
     z-index: 0;
     width: 100%;
@@ -34,14 +35,15 @@ hr.myhrline{
 }
 
 /* defines card container */
+
 .card {
     top: 50%;
-    left: 50%;
+    /* left: 50%; */
     margin: 18px;
     width: 540px;
-    height: 270px; 
+    height: 270px;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     cursor: pointer;
     transform-style: preserve-3d;
     transform-origin: center;
@@ -49,9 +51,10 @@ hr.myhrline{
 }
 
 /* defines card design */
+
 .card-inner {
     position: relative;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25), -5px -5px 10px 5px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25), -5px -5px 10px 5px rgba(0, 0, 0, 0.22);
     transition: box-shadow 0.2s ease-in-out;
     width: 100%;
     height: 100%;
@@ -61,6 +64,7 @@ hr.myhrline{
 }
 
 /* flips card to reveal concealed side */
+
 .card-inner.is-flipped {
     transform: rotateY(180deg);
 }
@@ -69,17 +73,20 @@ hr.myhrline{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
+
 .card-front {
     background-color: #bbb;
     color: black;
 }
-  
+
 /* Style the back side */
+
 .card-back {
     background-color: dodgerblue;
     color: white;
@@ -87,17 +94,18 @@ hr.myhrline{
 }
 
 /* contains card image */
+
 .card .card_image {
     width: inherit;
     height: inherit;
 }
-  
+
 .card .card_image img {
     width: inherit;
     height: inherit;
     object-fit: cover;
 }
-  
+
 .card .card_authour {
     position: absolute;
     top: 92%;
@@ -108,6 +116,7 @@ hr.myhrline{
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
+    width: 90%;
     /* margin-bottom: -80px; */
     /* height: 40px; */
 }
@@ -143,13 +152,13 @@ hr.myhrline{
 
 .card-inner:hover {
     /* transition: box-shadow 0.2s ease-in-out; */
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
+
 .card:hover {
-    transform: translate(-50%, -50%) scale(1.05, 1.05);
+    transform: translate(0%, -50%) scale(1.05, 1.05);
 }
-  
+
 .title-white {
     color: white;
 }
@@ -157,16 +166,83 @@ hr.myhrline{
 .title-black {
     color: black;
 }
-  
-@media all and (max-width: 420px) {
+
+@media all and (max-width: 570px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
     .card {
-        width: 350px;
+        width: 480px;
         margin: 6px;
-        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.25), 
-            0px 0px 10px 0px rgba(0,0,0,0.22);
+        /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(0, 0, 0, 0.22); */
+    }
+    .card .card_quote_front, .card .card_quote_back {
+        font-size: 28px;
+        padding: 4px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .card {
+        width: 410px;
+        margin: 6px;
+        /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(0, 0, 0, 0.22); */
+    }
+    .card .card_quote_front, .card .card_quote_back {
+        font-size: 28px;
+        padding: 4px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .card {
+        width: 380px;
+        margin: 6px;
+        /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(0, 0, 0, 0.22); */
+    }
+    .card .card_quote_front, .card .card_quote_back {
+        font-size: 28px;
+        padding: 4px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .card {
+        width: 330px;
+        margin: 6px;
+        /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(0, 0, 0, 0.22); */
+    }
+    .card .card_quote_front, .card .card_quote_back {
+        font-size: 24px;
+        padding: 4px;
+    }   
+}
+
+@media all and (max-width: 360px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+    .card {
+        width: 290px;
+        margin: 6px;
+        /* box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25), 0px 0px 10px 0px rgba(0, 0, 0, 0.22); */
+    }
+    .card .card_quote_front, .card .card_quote_back {
+        font-size: 22px;
+        padding: 4px;
     }
 }
