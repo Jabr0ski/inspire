@@ -15,8 +15,16 @@ hr.myhrline {
 
 .center {
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    font-size: 80px;
+    margin: auto;
+    opacity: 0.3;
 }
 
 .white-background {
@@ -64,7 +72,6 @@ hr.myhrline {
 }
 
 /* flips card to reveal concealed side */
-
 .card-inner.is-flipped {
     transform: rotateY(180deg);
 }
@@ -79,7 +86,6 @@ hr.myhrline {
 }
 
 /* Style the front side (fallback if image is missing) */
-
 .card-front {
     background-color: #bbb;
     color: black;
@@ -111,12 +117,10 @@ hr.myhrline {
     top: 92%;
     left: 50%;
     transform: translate(-50%, -100%);
-    /* text-align: right; */
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
     width: 90%;
-    /* margin-bottom: -80px; */
 }
 
 .card .card_extra {
@@ -124,12 +128,10 @@ hr.myhrline {
     top: 98.5%;
     left: 50%;
     transform: translate(-50%, -100%);
-    /* text-align: right; */
     font-family: sans-serif;
     font-weight: bold;
     font-size: 16px;
     width: 90%;
-    /* margin-bottom: -80px; */
 }
 
 .card .card_quote_front, .card .card_quote_back {
@@ -141,10 +143,11 @@ hr.myhrline {
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 25px;
     padding: 8px;
-    width: 90%;
+    width: 88%;
+    /* font-family: 'Yusei Magic', sans-serif; */
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .card-inner:hover {
