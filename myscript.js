@@ -89,8 +89,13 @@ function loadCards() {
   you said, people will forget what you did, but people will \
   never forget how you made them feel.", "Maya Angelou", "Unknown Origin",
     "images/purple_mountain.jpg")
+  
+  let q11 = new qCard("Yesterday is history, tomorrow is a mystery, \
+  but today is a gift... that is why it is called the present."
+  , "Master Oogway", "Kung Fu Panda",
+    "images/pink_valley.jpg")
 
-  qCards = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
+  qCards = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11];
 }
 
 //selects a random quote card from qCards
