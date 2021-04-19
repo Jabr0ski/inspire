@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'caveatregular';
+    src: url('fonts/caveat-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/caveat-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .background {
     position: relative;
     background-color: #507ec8;
@@ -20,11 +29,11 @@ hr.myhrline {
 }
 
 .title {
-    font-family: 'Roboto', sans-serif;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-    font-size: 80px;
+    font-family: 'caveatregular', sans-serif;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #000;
+    font-size: 100px;
     margin: auto;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .white-background {
