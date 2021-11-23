@@ -95,7 +95,12 @@ function loadCards() {
   , "Master Oogway", "Kung Fu Panda",
     "images/pink_valley.jpg")
 
-  qCards = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11];
+  let q12 = new qCard("We didn't realise we were making memories, \
+  we just knew we were having fun."
+  , "Winnie the Pooh", "Winnie the Pooh",
+    "images/pink_valley.jpg")
+  
+  qCards = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12];
 }
 
 //selects a random quote card from qCards
