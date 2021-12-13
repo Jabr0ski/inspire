@@ -43,19 +43,19 @@ function changeText() {
   }
 }
 
-let imageURLs = ["images/orange_valley.jpg", 
-"images/blue_lighthouse.jpg", "images/green_forest.jpg",
-"images/purple_mountain.jpg", "images/pink_valley.jpg"];
+// let imageURLs = ["images/orange_valley.jpg", 
+// "images/blue_lighthouse.jpg", "images/green_forest.jpg",
+// "images/purple_mountain.jpg", "images/pink_valley.jpg"];
 
-//preloads images so they don't change after the 
-//card has already been flipped
-function preloadImage(url)
-{
-    var img=new Image();
-    img.src=url;
-}
+// //preloads images so they don't change after the 
+// //card has already been flipped
+// function preloadImage(url)
+// {
+//     var img=new Image();
+//     img.src=url;
+// }
 
-imageURLs.forEach(url => preloadImage(url));
+// imageURLs.forEach(url => preloadImage(url));
 
 //fills qCards array with data for cards to be displayed
 function loadCards() {
